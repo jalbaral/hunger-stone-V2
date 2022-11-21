@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { Link } from "next/link";
 
-export default function Example() {
+export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/feed" className="flex items-center">
+        <a href="/feed/1" className="flex items-center">
           Planet News
         </a>
       </Typography>
@@ -56,9 +56,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link href="/about" className="flex items-center">
+        <a href="/about" className="flex items-center">
           About Me
-        </Link>
+        </a>
       </Typography>
     </ul>
   );
@@ -69,7 +69,7 @@ export default function Example() {
         <Typography
           as="a"
           href="/"
-          variant="large"
+          variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
           <span>Hunger Stone</span>
